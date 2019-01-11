@@ -295,7 +295,7 @@ def get_bot_response():
 
 
 if __name__ == "__main__":
-    port = 5577
+    port = 80
     # print('Starting ontology server on port  ' + str(port), file=sys.stderr)
     app.run(host='0.0.0.0', port=port)
     # app.run(port=port)
