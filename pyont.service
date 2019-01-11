@@ -1,0 +1,13 @@
+[Unit]
+Description=Ontology service at port 577
+After=multi-user.target
+
+[Service]
+User=vps
+Group=vps
+Type=idle
+WorkingDirectory=/home/vps/Documents/projects/project/project-mai-2/release/ontology-reasoner
+ExecStart=/usr/bin/python3 /home/vps/Documents/projects/project/project-mai-2/release/ontology-reasoner/server.py
+
+[Install]
+WantedBy=multi-user.target
