@@ -14,7 +14,7 @@ CORS(app, support_credentials=True)
 
 # Load language model
 #print('Preloading language model...', file=sys.stderr)
-nlp = sp.load('en')
+nlp = sp.load('en_default')
 from spacy.lemmatizer import Lemmatizer
 from spacy.lang.en import LEMMA_INDEX, LEMMA_EXC, LEMMA_RULES
 lemmatizer = Lemmatizer(LEMMA_INDEX, LEMMA_EXC, LEMMA_RULES)
