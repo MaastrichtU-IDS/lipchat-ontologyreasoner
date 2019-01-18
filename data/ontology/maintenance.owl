@@ -1,1359 +1,1448 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#"
-     xml:base="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-6"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#causedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#causedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#CauseOfDamage"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#hasSize -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#hasSize">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#DamagedObject"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#isResponsibleFor -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#isResponsibleFor"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#require -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#require">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#RequiredAction"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#AccessibilityIssue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#AccessibilityIssue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalIssue"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Agency -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Agency">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalPerson"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#CauseOfDamage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#DamagedObject"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#CauseOfDamage -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#CauseOfDamage">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ContractIssue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ContractIssue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalIssue"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#DamagedObject -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#DamagedObject">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#FixedTermContractIssue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#FixedTermContractIssue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ContractIssue"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#HighCostWearTear -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#HighCostWearTear">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Idea -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Idea">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Person"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Landlord -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Landlord">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalPerson"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Person"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LandlordInCharge -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LandlordInCharge">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#causedBy"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#hasSize"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#require"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalIssue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalIssue"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalPerson -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LegalPerson"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LowCostWearTear -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#LowCostWearTear">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#RequiredAction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#RequiredAction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#PermanentTermContractIssue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#PermanentTermContractIssue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ContractIssue"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Person -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Person"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#RequiredAction -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#RequiredAction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#DamagedObject"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Tenant -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Tenant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Person"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#TenantInCharge -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#TenantInCharge">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#causedBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#hasSize"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Damage"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#require"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#Maintenance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#UndefinedAction -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#UndefinedAction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#RequiredAction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#UndefinedObject -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#UndefinedObject">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#DamagedObject"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#CauseOfDamage"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#abuse -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#abuse"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#affirmative -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#affirmative">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#aged -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#aged"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#antique -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#antique"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bed -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#blanket -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#blanket">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bleeding -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bleeding">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bookshelf -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bookshelf">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#break -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#break"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#broom -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#broom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#brush -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#brush">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bulb -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#bulb">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cable -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cable">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#carpet -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#carpet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#carport -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#carport">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cases -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cases">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ceilings -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ceilings">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#chair -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#chair">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#chimney -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#chimney">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cleaner -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cleaner">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cleaning -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cleaning">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#closet -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#closet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#coffeemaker -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#coffeemaker">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#controlling -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#controlling">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#couch -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#couch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cup -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#cup">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#decrepit -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#decrepit"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#degraded -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#degraded"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#delipated -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#delipated"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#descaling -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#descaling">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#desk -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#desk">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#door -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#door">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#doorbells -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#doorbells">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#doorknob -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#doorknob">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#drought_prevention -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#drought_prevention">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#dryer -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#dryer">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#drying_rack -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#drying_rack">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#emptying -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#emptying">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#expire -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#expire"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fell -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fell"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fitting -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fitting">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#flag -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#flag">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#footstools -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#footstools">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fork -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fork">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fridge -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#fridge">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#glass -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#glass">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#handrail -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#handrail">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#heating_system -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#heating_system">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#hinges -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#hinges">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#keys -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#keys">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#knife -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#knife">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#lamps -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#lamps">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#letterbox -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#letterbox">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#levelling -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#levelling">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#litter -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#litter">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#locks -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#locks">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#lubricating -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#lubricating">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#maintening -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#maintening">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#mechanical -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#mechanical">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#mirror -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#mirror">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#modem -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#modem">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#moving_parts -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#moving_parts">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#mowing -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#mowing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#negative -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#negative">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#network -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#network">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#no -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#no">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#nope -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#nope">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#not -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#not">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#oiling -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#oiling">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#old -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#old"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#oven -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#oven">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#painting -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#painting">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#paper -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#paper">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pillow -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pillow">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#plants -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#plants">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#plate -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#plate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pot -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pot">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pouring -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pouring">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#power_strip -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#power_strip">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pre_exist -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#pre_exist"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#radiator -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#radiator">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#removing -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#removing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#renovating -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#renovating">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#replacement -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#replacement">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#replacing -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#replacing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#replenishing -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#replenishing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#restarting -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#restarting">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#router -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#router">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#run_down -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#run_down"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sandwich_maker -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sandwich_maker">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#screw_down -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#screw_down">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#secure -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#secure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#seedy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#seedy"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sheet -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sheet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#shockets -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#shockets">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#shutter -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#shutter">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sink -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sink">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#slab -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#slab">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#smashed -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#smashed"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#soap -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#soap">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sponge -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#sponge">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#spoon -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#spoon">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#staining -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#staining">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#started -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#started"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#stool -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#stool">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#stopped -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#stopped"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#straightening_up -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#straightening_up">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#switches -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#switches">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tap_washers -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tap_washers">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#taps -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#taps">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:complementOf rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-            </owl:Class>
-        </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tile -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tile">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#towels -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#towels">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tray -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tray">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tresholds -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#tresholds">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#trimming -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#trimming">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#unblocking -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#unblocking">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#walked -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#walked"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#walls -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#walls">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#washing_machine -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#washing_machine">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#wear_out -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#wear_out"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#weeping -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#weeping">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#whitewashing -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#whitewashing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#woodwork -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#woodwork">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#worn -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#worn"/>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ye -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#ye">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#yes -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#yes">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#yup -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#yup">
-        <rdf:type rdf:resource="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BadUse"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#BigObject"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MajorAction"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#MinorAction"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#SmallObject"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#UndefinedAction"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#UndefinedObject"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/konstantinosreal/ontologies/2018/4/untitled-ontology-3#WearTear"/>
-        </owl:members>
-    </rdf:Description>
-</rdf:RDF>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-6"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#PaintingInteriorWoodwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GardenLeveling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WallpaperingInteriorWalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VentilationChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrationFee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InsideLamp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Letterbox"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ceiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteriorObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doorstep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPercentage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalIssue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FloorGrill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Door"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiceIssue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BadUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisallowedRentIncrease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Floor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FleasIssue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#replacementOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeFrequency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDegreeQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TreePruning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landlord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LivingAreaCleaning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YardSeparation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WaspIssue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WhitewashingInteriorWalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gutter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteriorPainting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FaucetPart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WhitewashingCeiling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DoorKnob"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CentralHeatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cesspit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectricalDevice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FillingHoles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chimney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LonghornBeetleIssue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shutter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stove"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PharaohIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toilet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DegreeQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAllowedPercentage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#repairOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CarPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MajorVerminIssue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WoodwormIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinorVerminIssue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Window"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SewerUnclogging"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightBulb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlagpoleHolder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cupboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContractIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExteriorPainting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaintingExteriorWalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cooker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegularUpkeep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SepticTank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GardenUpkeep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalCalamity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BigObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDisallowedPercentage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AntsIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaintingPreparatoryWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lightbulb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllowedRentIncrease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IllegalStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Internet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GarbageContainerRoom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AccessPath"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaintingCeiling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cabinet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Driveway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shower"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFrequency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regularUpkeepOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GrassMowing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hinge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighCost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoreThanOncePerYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResponsibleFor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Couch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CockroachIssue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandRail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinorIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdministrationFeeChargingEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carpet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeedsRemoval"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WallSocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OncePerYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RentIncrease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoilApplication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Key"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RainDrain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CeilingGrill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drainage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaintenanceIssue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#chargingOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lighting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWithObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mailbox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IllegalEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DirtChute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WashingMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MajorIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlassObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PropertyDamageCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responsibilityOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mirror"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LetterboxPart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DecoratingInteriorWalls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PropertyObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CeilingOfSmallCracks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tenant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bookshelf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dryer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WearAndTear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Refrigerator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowCost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExteriorObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YardSeparationsDyeing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doorbell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Faucet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectricalSwitch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContractDependentStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OutsideLamp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tap"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AdministrationFeeChargingEvent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#chargingOf"/>
+            <Class IRI="#AdministrationFee"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AllowedRentIncrease"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#RentIncrease"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFrequency"/>
+                <Class IRI="#OncePerYear"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HighCost"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cost"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDegreeQuality"/>
+                <Class IRI="#High"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Landlord"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#LegalPerson"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isResponsibleFor"/>
+                <Class IRI="#MajorIssue"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LowCost"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cost"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDegreeQuality"/>
+                <Class IRI="#Low"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MajorIssue"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithObject"/>
+                <Class IRI="#BigObject"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#causedBy"/>
+                <ObjectComplementOf>
+                    <Class IRI="#BadUse"/>
+                </ObjectComplementOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCost"/>
+                <Class IRI="#HighCost"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MajorIssue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#responsibilityOf"/>
+            <Class IRI="#Landlord"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MinorIssue"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithObject"/>
+                <Class IRI="#SmallObject"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#causedBy"/>
+                <Class IRI="#BadUse"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCost"/>
+                <Class IRI="#LowCost"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is an alternative way of assigning responsibility, and we do not know which one makes more sense.</Literal>
+        </Annotation>
+        <Class IRI="#MinorIssue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#responsibilityOf"/>
+            <Class IRI="#Tenant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tenant"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#LegalPerson"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isResponsibleFor"/>
+                <Class IRI="#MinorIssue"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AdministrationFee"/>
+        <Class IRI="#Fee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdministrationFeeChargingEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllowedRentIncrease"/>
+        <Class IRI="#LegalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllowedRentIncrease"/>
+        <Class IRI="#RentIncrease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BadUse"/>
+        <Class IRI="#PropertyDamageCause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigObject"/>
+        <Class IRI="#PropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractDependentStatus"/>
+        <Class IRI="#Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractIssue"/>
+        <Class IRI="#LegalIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisallowedRentIncrease"/>
+        <Class IRI="#IllegalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisallowedRentIncrease"/>
+        <Class IRI="#RentIncrease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExteriorObject"/>
+        <Class IRI="#PropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExteriorPainting"/>
+        <Class IRI="#MajorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GardenUpkeep"/>
+        <Class IRI="#RegularUpkeep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlassObject"/>
+        <Class IRI="#PropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High"/>
+        <Class IRI="#DegreeQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighCost"/>
+        <Class IRI="#Cost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IllegalEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IllegalStatus"/>
+        <Class IRI="#Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteriorObject"/>
+        <Class IRI="#PropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteriorPainting"/>
+        <Class IRI="#MinorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalStatus"/>
+        <Class IRI="#Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lighting"/>
+        <Class IRI="#PropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low"/>
+        <Class IRI="#DegreeQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowCost"/>
+        <Class IRI="#Cost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaintenanceIssue"/>
+        <Class IRI="#LegalIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MajorIssue"/>
+        <Class IRI="#MaintenanceIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MajorVerminIssue"/>
+        <Class IRI="#MajorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinorIssue"/>
+        <Class IRI="#MaintenanceIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinorVerminIssue"/>
+        <Class IRI="#MinorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoreThanOncePerYear"/>
+        <Class IRI="#TimeFrequency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalCalamity"/>
+        <Class IRI="#PropertyDamageCause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OncePerYear"/>
+        <Class IRI="#TimeFrequency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaintingPreparatoryWork"/>
+        <Class IRI="#InteriorPainting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegularUpkeep"/>
+        <Class IRI="#MinorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RentIncrease"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallObject"/>
+        <Class IRI="#PropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tenant"/>
+        <Class IRI="#LegalPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WearAndTear"/>
+        <Class IRI="#PropertyDamageCause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#chargingOf"/>
+            <Class IRI="#AdministrationFee"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#IllegalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Check whose responsibility it is</Literal>
+        </Annotation>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regularUpkeepOf"/>
+            <Class IRI="#BigObject"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#MinorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">check legality</Literal>
+        </Annotation>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regularUpkeepOf"/>
+            <Class IRI="#ExteriorObject"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#MinorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#repairOf"/>
+            <Class IRI="#BigObject"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#MajorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#repairOf"/>
+            <Class IRI="#Lighting"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#MinorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#repairOf"/>
+            <Class IRI="#SmallObject"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#MinorIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#repairOf"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#MaintenanceIssue"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AllowedRentIncrease"/>
+        <Class IRI="#DisallowedRentIncrease"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BadUse"/>
+        <Class IRI="#NaturalCalamity"/>
+        <Class IRI="#WearAndTear"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BigObject"/>
+        <Class IRI="#SmallObject"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExteriorObject"/>
+        <Class IRI="#InteriorObject"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#High"/>
+        <Class IRI="#Low"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighCost"/>
+        <Class IRI="#LowCost"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IllegalEvent"/>
+        <Class IRI="#LegalEvent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Landlord"/>
+        <Class IRI="#Tenant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MajorIssue"/>
+        <Class IRI="#MinorIssue"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MoreThanOncePerYear"/>
+        <Class IRI="#OncePerYear"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#AccessPath"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinorVerminIssue"/>
+        <NamedIndividual IRI="#AntsIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Bath"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Bath"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Bed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Bed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Bookshelf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Bookshelf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Cabinet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Cabinet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Cable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#CarPort"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Carpet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Carpet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Ceiling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Ceiling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#CeilingGrill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaintingPreparatoryWork"/>
+        <NamedIndividual IRI="#CeilingOfSmallCracks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#CentralHeatingSystem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Cesspit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#Cesspit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Chair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Chair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Chimney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#Chimney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MajorVerminIssue"/>
+        <NamedIndividual IRI="#CockroachIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Cooker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Cooker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Couch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Couch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Cupboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Cupboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorPainting"/>
+        <NamedIndividual IRI="#DecoratingInteriorWalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#DirtChute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Door"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Door"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#DoorKnob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#DoorKnob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#Doorbell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Doorbell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Doorstep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Drainage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#Driveway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Dryer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Dryer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#ElectricalDevice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#ElectricalDevice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#ElectricalSwitch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Faucet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#FaucetPart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaintingPreparatoryWork"/>
+        <NamedIndividual IRI="#FillingHoles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#FlagpoleHolder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinorVerminIssue"/>
+        <NamedIndividual IRI="#FleasIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Floor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Floor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#FloorGrill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#GarbageContainerRoom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GardenUpkeep"/>
+        <NamedIndividual IRI="#GardenLeveling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GardenUpkeep"/>
+        <NamedIndividual IRI="#GrassMowing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Gutter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#HandRail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#HeatingSystem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#HeatingSystem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Hinge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lighting"/>
+        <NamedIndividual IRI="#InsideLamp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Key"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Lamp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#Letterbox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#LetterboxPart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinorVerminIssue"/>
+        <NamedIndividual IRI="#LiceIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#LightBulb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#LightBulb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lighting"/>
+        <NamedIndividual IRI="#Lightbulb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegularUpkeep"/>
+        <NamedIndividual IRI="#LivingAreaCleaning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Lock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MajorVerminIssue"/>
+        <NamedIndividual IRI="#LonghornBeetleIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#Mailbox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Mailbox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GlassObject"/>
+        <NamedIndividual IRI="#Mirror"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lighting"/>
+        <NamedIndividual IRI="#OutsideLamp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Oven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Oven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorPainting"/>
+        <NamedIndividual IRI="#PaintingCeiling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorPainting"/>
+        <NamedIndividual IRI="#PaintingExteriorWalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorPainting"/>
+        <NamedIndividual IRI="#PaintingInteriorWoodwork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MajorVerminIssue"/>
+        <NamedIndividual IRI="#PharaohIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#RainDrain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Refrigerator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Refrigerator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Roof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#Roof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#SepticTank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegularUpkeep"/>
+        <NamedIndividual IRI="#SewerUnclogging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Shower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Shower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Shutter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Sink"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Sink"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GardenUpkeep"/>
+        <NamedIndividual IRI="#SoilApplication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Stove"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Stove"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#TV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#TV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Table"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#Table"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Tap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Toilet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Toilet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GardenUpkeep"/>
+        <NamedIndividual IRI="#TreePruning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#VentilationChannel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Wall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#Wall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmallObject"/>
+        <NamedIndividual IRI="#WallSocket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorPainting"/>
+        <NamedIndividual IRI="#WallpaperingInteriorWalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#WashingMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorObject"/>
+        <NamedIndividual IRI="#WashingMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinorVerminIssue"/>
+        <NamedIndividual IRI="#WaspIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GardenUpkeep"/>
+        <NamedIndividual IRI="#WeedsRemoval"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorPainting"/>
+        <NamedIndividual IRI="#WhitewashingCeiling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InteriorPainting"/>
+        <NamedIndividual IRI="#WhitewashingInteriorWalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BigObject"/>
+        <NamedIndividual IRI="#Window"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GlassObject"/>
+        <NamedIndividual IRI="#Window"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MajorVerminIssue"/>
+        <NamedIndividual IRI="#WoodwormIssue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExteriorObject"/>
+        <NamedIndividual IRI="#YardSeparation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GardenUpkeep"/>
+        <NamedIndividual IRI="#YardSeparationsDyeing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#associatedWithObject"/>
+            <Class IRI="#BigObject"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#thing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causedBy"/>
+            <Class IRI="#NaturalCalamity"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#thing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCost"/>
+            <Class IRI="#HighCost"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#thing"/>
+    </ClassAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#repairOf"/>
+        <ObjectProperty IRI="#replacementOf"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAllowedPercentage"/>
+        <ObjectProperty IRI="#hasPercentage"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDisallowedPercentage"/>
+        <ObjectProperty IRI="#hasPercentage"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isResponsibleFor"/>
+        <ObjectProperty IRI="#responsibilityOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedWithObject"/>
+        <Class IRI="#MaintenanceIssue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causedBy"/>
+        <Class IRI="#MaintenanceIssue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#LegalIssue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDegreeQuality"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFrequency"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isResponsibleFor"/>
+        <Class IRI="#LegalPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedWithObject"/>
+        <Class IRI="#PropertyObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causedBy"/>
+        <Class IRI="#PropertyDamageCause"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#chargingOf"/>
+        <Class IRI="#AdministrationFee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Cost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDegreeQuality"/>
+        <Class IRI="#DegreeQuality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFrequency"/>
+        <Class IRI="#TimeFrequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isResponsibleFor"/>
+        <Class IRI="#LegalIssue"/>
+    </ObjectPropertyRange>
+</Ontology>
 
 
 
