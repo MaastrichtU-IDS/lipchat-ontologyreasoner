@@ -24,13 +24,13 @@ lemmatizer = Lemmatizer(LEMMA_INDEX, LEMMA_EXC, LEMMA_RULES)
 from owlready2 import *
 import os
 cwd = os.getcwd()
-ontology_base = 'data\\ontology\\'
+ontology_base = 'data/ontology/'
 ontology_path = ontology_base + 'maintenance.'
 onto_path.append(ontology_base)
 basepath = os.path.dirname(__file__)
 filepath = os.path.abspath(os.path.join(basepath, ontology_path + "owl"))
-ontology_prefix = basepath + '\\' + ontology_path
-ontology_prefix_clean = basepath + '\\' + ontology_base
+ontology_prefix = basepath + '/' + ontology_path
+ontology_prefix_clean = basepath + '/' + ontology_base
 ontology = get_ontology(filepath).load()
 ontology.load()
 ontology_prefix = cwd + ontology_prefix 
