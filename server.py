@@ -283,13 +283,13 @@ def get_bot_response():
     print(issue.__class__)
 
     if ("MajorIssue" in str(issue.__class__)):
-        response = {'text': 'The landlord may be responsible for resolving this issue.'}
+        response = {'text': 'The landlord may be responsible for resolving this issue.<br> <a target = "_blank" href=https://wetten.overheid.nl/BWBR0005290/2018-09-19#Boek7_Titeldeel4_Afdeling5_ParagraafOnderafdeling1>Burgerlijk Wetboek Boek 7</a>'}
         return jsonify(response)
     elif ("MinorIssue" in str(issue.__class__)):
-        response = {'text': 'The tenant is generally responsible for repairing, replacing or maintaining such items in this case.'}
+        response = {'text': 'The tenant is generally responsible for repairing, replacing or maintaining such items in this case.<br> <a target = "_blank" href=https://wetten.overheid.nl/BWBR0005290/2018-09-19#Boek7_Titeldeel4_Afdeling5_ParagraafOnderafdeling1>Burgerlijk Wetboek Boek 7</a>'}
         return jsonify(response)
     else:
-        response = {'text': 'I am not sure if the tenant or landlord is responsible for resolving this particular issue.'}
+        response = {'text': 'I am not sure if the tenant or landlord is responsible for resolving this particular issue.<br> <a target = "_blank" href=https://wetten.overheid.nl/BWBR0005290/2018-09-19#Boek7_Titeldeel4_Afdeling5_ParagraafOnderafdeling1>Burgerlijk Wetboek Boek 7</a>'}
         return jsonify(response)
 
 if __name__ == "__main__":
